@@ -1,0 +1,42 @@
+.video-wrap {
+  padding: 0rpx;
+}
+.video-wrap .video {
+  width: 100%;
+  margin: 0 auto;
+  height: 400rpx;
+}
+.video .control-icon {
+  width: 96rpx;
+  height: 96rpx;
+  position: absolute;
+  top: calc(50% - 48rpx);
+  left: calc(50% - 48rpx);
+}
+.video .control-icon > image {
+  width: 100%;
+  height: 100%;
+}
+.viewSearch{
+  width: 100%;
+  height: 10%;
+  position: relative;
+  align-items: center;
+  
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  height: 800rpx;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+.test{
+  background-color: aqua;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
