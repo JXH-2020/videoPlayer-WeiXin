@@ -4,5 +4,4 @@
 ## index界面
 ![image](https://user-images.githubusercontent.com/67779513/231115312-654669e6-ef5d-4128-8632-8f62c5b15859.png)
 ![image](https://user-images.githubusercontent.com/67779513/231114517-7651ce82-b3ba-4eef-9aa1-44db6cb4ae13.png)
-## show界面
 
