@@ -1,0 +1,28 @@
+<view class="video-wrap">
+  <video
+    class="video"
+    id="video_player"
+    src='{{src}}'
+    show-center-play-btn="{{false}}"
+    show-play-btn="{{false}}"
+    enable-play-gesture
+    bindplay="triggerPlay"
+    bindpause="triggerPause"
+    bindcontrolstoggle="controlsToggle"
+    bindtouchmove="touchMove"
+    bindtouchend="touchEnd">
+    <view class="control-icon" hidden="{{!controlShow}}">
+      <image hidden="{{isPlay}}" src="./icon-play.png" bindtap="handlePlay"></image>
+      <image hidden="{{!isPlay}}" src="./icon-pause.png" bindtap="handlePause"></image>
+    </view>
+  </video>
+</view>
+<view class = "viewSearch">
+  <input class="input" name="user" placeholder="输入视频名称" bindinput="searchName" />
+</view>
+<button bindtap="bindButtonTap">获取视频</button>
+<scroll-view scroll-y="true" class="container">
+  <view wx:for="{{array}}" wx:key="index" date-postId="{{array}}" style="display: flex; justify-content: center; align-items: center;">
+    <text bindtap="onItemClick" data-index="{{ index }}" style="font-size: 35rpx; color: #333; text-align: center;">{{item}}</text>
+  </view>
+</scroll-view >
